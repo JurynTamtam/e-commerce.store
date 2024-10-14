@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleGallery.css">
+    <link rel="stylesheet" href="styleUsingflexbox.css">
+    <title>E-commerce Store</title>
+</head>
+<body>
+  <header class="header text-center">
+    <!-- Header content -->
+        <div class="header-content">
+            <h1>Taste in Pinas</h1>
+            <p>Experience the Taste of the Philippines</p>
+        </div> 
+    
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon color-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cart">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#account">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <div class="text-overlay" id="div">
+        <h1>What best describe Filipino food?</h1>
+        <p>
+        Filipino food is characterized by the combination of three flavors – sweet, sour, and salty. Compared to other Southeast Asian countries, spices and heat don't figure as prominently in traditional Filipino cuisine.</p>
+    </div>
+
+
+    <main class="container mt-4">
+        <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://thekitchencommunity.org/wp-content/uploads/2022/03/filipino-recipe-1200x900.jpg" class="d-block w-100" alt="Leche Plan" onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="carousel-caption text-dark">
+        <strong><p>Leche Plan</p></strong>
+        <p>Filipino dessert made with egg yolks, milk, sugar, and vanilla extract!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.bhg.com/thmb/xP6vr6usB1_phcXnXE75YkUcH7g=/4000x0/filters:no_upscale():strip_icc()/BHG-Halo-Halo-Hero-6MKIKIe-ar386nzeJOHjW_-354671c880d441aba6a75e75e59b1066.jpg" class="d-block w-100" alt="Halo-halo">
+      <div class="carousel-caption text-light">
+        <strong><p>Halo-Halo</p></strong>
+        <p>Filipino cold dessert of crushed ice, evaporated milk, beans, tapioca pearls and various toppings such as jelly or fruit! Filipino dessert primarily made of glutinous rice flour.</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.ajinomoto.com.ph/ajinomoto-static/web/wp-content/uploads/2021/03/Colorful-Puto-Pao.jpg" class="img-fluid w-100" alt="Puto">
+      <div class="carousel-caption text-light">
+       <strong><p>Puto</p></strong>
+        <p>Filipino dessert primarily made of glutinous rice flour.</p>
+      </div> 
+    </div>
+     <div class="carousel-item">
+        <img src="https://directlyph.files.wordpress.com/2016/08/tumblr_kztj0rzyub1qzdtod.jpg?w=610" class="img-fluid w-100" alt="Sorbetes">
+        <div class="carousel-caption text-dark">
+        <strong><p>Sorbetes</p></strong>
+        <p>Filipino ice cream flavored with ingredients such as mango, chocolate, cheese, coconut, and ube!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+         <img src="https://kitchenconfidante.com/wp-content/uploads/2020/03/Ginataan-Bilo-Bilo-kitchenconfidante.com-0676-Edit-1170x580.jpg" class="img-fluid w-100"  alt="Ginataang Bilo-bilo">
+         <div class="carousel-caption text-dark">
+        <strong><p>Ginataang Bilo-bilo</p></strong>
+        <p>Filipino creamy concoction made with sticky rice balls, sago, and jackfruit in coconut milk!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+         <img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2016/02/Kutsinta-Wide.jpg?fit=1080%2C720&ssl=1" class="img-fluid w-100"  alt="Kutsinta">
+         <div class="carousel-caption text-light">
+        <strong><p>Kutsinta</p></strong>
+        <p>Filipino steamed cakes made with flour, tapioca flour, and brown sugar!</p>
+      </div> 
+    </div>
+     <div class="carousel-item">
+         <img src="https://images.summitmedia-digital.com/esquiremagph/images/2020/05/26/history-of-taho-photo-by-Abo-Limos.jpg" class="img-fluid w-100"  alt="Taho">
+         <div class="carousel-caption text-dark">
+        <strong><p>Taho</p></strong>
+        <p>Filipino delicacy made of silken tofu, sago pearls, and brown sugar syrup!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+         <img src="https://as2.ftcdn.net/v2/jpg/05/39/82/05/1000_F_539820547_M3vsJJzMBo76im7cKwnMEdiThnoJCh67.jpg" class="img-fluid w-100"  alt="Bibingka">
+         <div class="carousel-caption text-light">
+        <strong><p>Bibingka</p></strong>
+        <p>Traditionally made from galapong, coconut milk, margarine, and sugar!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+         <img src="https://www.rappler.com/tachyon/2023/02/shutterstock-turon.jpg" class="img-fluid w-100"  alt="Turon">
+         <div class="carousel-caption text-light">
+        <strong><p>Turon</p></strong>
+        <p>Sugared bananas in crispy golden spring rolls, striped with a crackly caramel crust!</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+         <img src="https://pinoycook.files.wordpress.com/2013/11/pichi-pichi.jpg?w=908" class="img-fluid w-100"  alt="Pichi-pichi">
+         <div class="carousel-caption text-dark">
+        <strong><p>Pichi-pichi</p></strong>
+        <p>Filipino delicacy made of grated cassava and coconut juice coated with grated coconut!</p>
+      </div> 
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</main>
+ <main class="main p-4">
+        <h3 class="bg-light text-center">Gallery of Products</h3> <hr>
+        <!-- make this a responsive gallery of images -->
+        <div class="image-gallery">
+            <img src="https://thekitchencommunity.org/wp-content/uploads/2022/03/filipino-recipe-1200x900.jpg" width="100" alt="Leche Plan"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://assets.bonappetit.com/photos/60e46c6701084801b06de2a3/1:1/w_2560%2Cc_limit/Halo-Halo-Recipe-2021.jpg" width="100" alt="Halo-halo" onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://www.ajinomoto.com.ph/ajinomoto-static/web/wp-content/uploads/2021/03/Colorful-Puto-Pao.jpg" width="100" alt="Puto" onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://sgp1.digitaloceanspaces.com/tz-mag-ph/wp-content/uploads/2020/03/040403035858/image2-770x679.png" width="100" alt="Sorbetes" onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://kitchenconfidante.com/wp-content/uploads/2020/03/Ginataan-Bilo-Bilo-kitchenconfidante.com-0676-Edit-1170x580.jpg" width="100" alt="Ginataang Bilo-bilo" onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2016/02/Kutsinta-Wide.jpg" width="100"alt="Kutsinta"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://images.summitmedia-digital.com/esquiremagph/images/2020/05/26/history-of-taho-photo-by-Abo-Limos.jpg" width="100"   alt="Taho"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://as2.ftcdn.net/v2/jpg/05/39/82/05/1000_F_539820547_M3vsJJzMBo76im7cKwnMEdiThnoJCh67.jpg" width="100"   alt="Bibingka"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://www.rappler.com/tachyon/2023/02/shutterstock-turon.jpg" width="100"   alt="Turon"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="https://images.yummy.ph/yummy/uploads/2018/10/09-2012_yummy-ph_recipe_pichi-pichi_image_fboxnew.jpg" width="100"   alt="Turon"  onclick="onClick(this)" data-bs-toggle="modal" data-bs-target="#myModal">
+        </div>
+    </main>
+
+    <aside class="aside">
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog ">
+            <div class="modal-content bg-light">
+
+              <!-- Modal Header -->
+              <div class="modal-header text-light ">
+                <b><h4 class="modal-title">The Pinoy Food</h4></b>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <b><p id="modalText"></p></b>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" id="selectedImage" class="img-fluid" alt="Selected Image">
+                        
+                    </div>
+                </div>
+            </div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+              </div>
+    </aside>
+
+    
+    <script>
+        function onClick(element) {
+            document.getElementById("selectedImage").src = element.src;
+
+            // Get the text associated with the image
+            var text = element.alt;
+            document.getElementById("modalText").innerText = text;
+
+            var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            modal.show();
+        }
+    </script>
+      
+
+
+    <footer class="footer text-center">
+        <a href="#home">Home</a> |
+        <a href="#shop">Shop</a> |
+        <a href="#categories">Categories</a> |
+        <a href="#cart">Cart</a> |
+        <a href="#account">Account</a> |
+        <a href="#contact">Contact</a>
+        <p>Juryn T. Tamtam| tamtamjuryn@gmail.com | <a href="https://web.facebook.com/juryn.tamtam.01042000jt">Facebook</a></p>
+    </footer>
+</body>
+</html>

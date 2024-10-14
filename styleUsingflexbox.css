@@ -1,0 +1,131 @@
+#div {
+            margin: 0;
+            padding: 20px;
+            background: url('https://img.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_1220-4886.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699747200&semt=ais') center/cover no-repeat;
+            height: 50vh;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Text color on top of the image */
+            font-family:"Georgia", "Courier New", fantasy;/* Use your preferred font */
+        }
+
+        .text-overlay {
+            text-align: center;
+        }
+
+        .text-overlay h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: hotpink;
+        }
+
+        .text-overlay p {
+            font-size: 1.2em;
+        }
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header{
+  padding: 20px;
+  font-family: 'Lucida Calligraphy', cursive;
+  text-align: center;
+  color: lightpink;
+  background-color:black;
+}
+.header p{
+  color: white;
+  font-family: "Georgia", "Courier New", fantasy;
+}
+.header img{
+  background-color: white;
+  border-radius: 20px;
+}
+
+main h3{
+   font-family: "Georgia", "Courier New", fantasy;
+   font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+}
+
+#navbarNav ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbarNav li {
+    margin: 0 1em;
+}
+
+/* Style the navigation bar links */
+#navbarNav a {
+
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Georgia", "Courier New", fantasy;
+}
+
+/* Change color on hover */
+#navbarNav  a:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.aside {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.modal-header{
+  background-color: hotpink;
+}
+.modal-footer button{
+  background-color: hotpink;
+}
+
+
+/* Fake image, just for this example */
+.modal img{
+ width: 100%;
+  border-radius: 15px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+footer p{
+  color: hotpink;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
